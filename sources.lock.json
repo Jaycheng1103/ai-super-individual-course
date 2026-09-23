@@ -1,0 +1,362 @@
+{
+  "schema": 1,
+  "verified_on": "2026-09-22",
+  "note": "鎖定的是整理日版本，不宣稱與課堂當天完全相同。上游完整授權隨下載來源保留。",
+  "sources": {
+    "ais-os": {
+      "repo": "nateherkai/AIS-OS",
+      "commit": "ce9cb93a1145da5daba84ea37208ec35fd03606e",
+      "archive_url": "https://codeload.github.com/nateherkai/AIS-OS/tar.gz/ce9cb93a1145da5daba84ea37208ec35fd03606e",
+      "archive_sha256": "3b9d28cd75e62388b3fb285e69789801c5e67bbe3c6fd1a74f8867f27dab415b",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "skills": []
+    },
+    "content": {
+      "repo": "Jaycheng1103/ai-superbrain-skills",
+      "commit": "06cc0c9f6c94cbe73d3107fe70e13c8b00a6922f",
+      "archive_url": "https://codeload.github.com/Jaycheng1103/ai-superbrain-skills/tar.gz/06cc0c9f6c94cbe73d3107fe70e13c8b00a6922f",
+      "archive_sha256": "d0afaa6a706b472cc4fd1d1cd400f8ef61b73fbdd73442f706acff0edda3191d",
+      "license": null,
+      "skills": [
+        {
+          "name": "fb-post-writer",
+          "path": "skills/fb-post-writer"
+        },
+        {
+          "name": "reels-script-writer",
+          "path": "skills/reels-script-writer"
+        },
+        {
+          "name": "ig-carousel-writer",
+          "path": "skills/ig-carousel-writer"
+        }
+      ]
+    },
+    "human": {
+      "repo": "Raymondhou0917/speak-human-tw",
+      "commit": "b71bc3f5020399c479b66a8c38901c0327ca7965",
+      "archive_url": "https://codeload.github.com/Raymondhou0917/speak-human-tw/tar.gz/b71bc3f5020399c479b66a8c38901c0327ca7965",
+      "archive_sha256": "d30dac063c36fcaa08a301df6a6016df9e35073e677416e6312ea83cc7b64794",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "skills": [
+        {
+          "name": "speak-human-tw",
+          "path": "."
+        }
+      ]
+    },
+    "marketing": {
+      "repo": "coreyhaines31/marketingskills",
+      "commit": "5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+      "archive_url": "https://codeload.github.com/coreyhaines31/marketingskills/tar.gz/5b2c0007766c6a1cf1d53fd8fc73e979e0821022",
+      "archive_sha256": "35c82fb8ec5d24bc5ab7ba9081bf67e33356c59df7086d88712b6d6a2c5c64f8",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "skills": [
+        {
+          "name": "ab-testing",
+          "path": "skills/ab-testing"
+        },
+        {
+          "name": "ad-creative",
+          "path": "skills/ad-creative"
+        },
+        {
+          "name": "ads",
+          "path": "skills/ads"
+        },
+        {
+          "name": "ai-seo",
+          "path": "skills/ai-seo"
+        },
+        {
+          "name": "analytics",
+          "path": "skills/analytics"
+        },
+        {
+          "name": "aso",
+          "path": "skills/aso"
+        },
+        {
+          "name": "attribution",
+          "path": "skills/attribution"
+        },
+        {
+          "name": "churn-prevention",
+          "path": "skills/churn-prevention"
+        },
+        {
+          "name": "co-marketing",
+          "path": "skills/co-marketing"
+        },
+        {
+          "name": "cold-email",
+          "path": "skills/cold-email"
+        },
+        {
+          "name": "community-marketing",
+          "path": "skills/community-marketing"
+        },
+        {
+          "name": "competitor-profiling",
+          "path": "skills/competitor-profiling"
+        },
+        {
+          "name": "competitors",
+          "path": "skills/competitors"
+        },
+        {
+          "name": "content-strategy",
+          "path": "skills/content-strategy"
+        },
+        {
+          "name": "copy-editing",
+          "path": "skills/copy-editing"
+        },
+        {
+          "name": "copywriting",
+          "path": "skills/copywriting"
+        },
+        {
+          "name": "cro",
+          "path": "skills/cro"
+        },
+        {
+          "name": "customer-research",
+          "path": "skills/customer-research"
+        },
+        {
+          "name": "directory-submissions",
+          "path": "skills/directory-submissions"
+        },
+        {
+          "name": "emails",
+          "path": "skills/emails"
+        },
+        {
+          "name": "events",
+          "path": "skills/events"
+        },
+        {
+          "name": "free-tools",
+          "path": "skills/free-tools"
+        },
+        {
+          "name": "image",
+          "path": "skills/image"
+        },
+        {
+          "name": "influencer-marketing",
+          "path": "skills/influencer-marketing"
+        },
+        {
+          "name": "launch",
+          "path": "skills/launch"
+        },
+        {
+          "name": "lead-magnets",
+          "path": "skills/lead-magnets"
+        },
+        {
+          "name": "marketing-council",
+          "path": "skills/marketing-council"
+        },
+        {
+          "name": "marketing-ideas",
+          "path": "skills/marketing-ideas"
+        },
+        {
+          "name": "marketing-loops",
+          "path": "skills/marketing-loops"
+        },
+        {
+          "name": "marketing-plan",
+          "path": "skills/marketing-plan"
+        },
+        {
+          "name": "marketing-psychology",
+          "path": "skills/marketing-psychology"
+        },
+        {
+          "name": "offers",
+          "path": "skills/offers"
+        },
+        {
+          "name": "onboarding",
+          "path": "skills/onboarding"
+        },
+        {
+          "name": "paywalls",
+          "path": "skills/paywalls"
+        },
+        {
+          "name": "popups",
+          "path": "skills/popups"
+        },
+        {
+          "name": "pricing",
+          "path": "skills/pricing"
+        },
+        {
+          "name": "product-marketing",
+          "path": "skills/product-marketing"
+        },
+        {
+          "name": "programmatic-seo",
+          "path": "skills/programmatic-seo"
+        },
+        {
+          "name": "prospecting",
+          "path": "skills/prospecting"
+        },
+        {
+          "name": "public-relations",
+          "path": "skills/public-relations"
+        },
+        {
+          "name": "referrals",
+          "path": "skills/referrals"
+        },
+        {
+          "name": "revops",
+          "path": "skills/revops"
+        },
+        {
+          "name": "sales-enablement",
+          "path": "skills/sales-enablement"
+        },
+        {
+          "name": "schema",
+          "path": "skills/schema"
+        },
+        {
+          "name": "seo-audit",
+          "path": "skills/seo-audit"
+        },
+        {
+          "name": "signup",
+          "path": "skills/signup"
+        },
+        {
+          "name": "site-architecture",
+          "path": "skills/site-architecture"
+        },
+        {
+          "name": "sms",
+          "path": "skills/sms"
+        },
+        {
+          "name": "social",
+          "path": "skills/social"
+        },
+        {
+          "name": "video",
+          "path": "skills/video"
+        }
+      ]
+    },
+    "interview": {
+      "repo": "mattpocock/skills",
+      "commit": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "archive_url": "https://codeload.github.com/mattpocock/skills/tar.gz/c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "archive_sha256": "7938c67820cd259ebca03efa78679455c1db5156f7404a50b6c53a45fe69345a",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "skills": [
+        {
+          "name": "grilling",
+          "path": "skills/productivity/grilling"
+        }
+      ]
+    },
+    "openchatcut": {
+      "repo": "0xsline/OpenChatCut",
+      "commit": "b49d5cff773570b732fe745e69ca0a0763974a87",
+      "archive_url": "https://codeload.github.com/0xsline/OpenChatCut/tar.gz/b49d5cff773570b732fe745e69ca0a0763974a87",
+      "archive_sha256": "84ae7f290d7a50023b890b1ee60bcc8ffe4859714372af0a5bc91dbe7d5c0724",
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "skills": [
+        {
+          "name": "openchatcut",
+          "path": "skills/openchatcut"
+        }
+      ]
+    },
+    "talking-video": {
+      "repo": "Jaycheng1103/openchatcut-talking-video-skill",
+      "commit": "8f74b772bd820e067ed71f80beac1d47a663a9ae",
+      "archive_url": "https://codeload.github.com/Jaycheng1103/openchatcut-talking-video-skill/tar.gz/8f74b772bd820e067ed71f80beac1d47a663a9ae",
+      "archive_sha256": "f5f8a16395956e4c77036cdf0b5711dacf157b5b02ad820b3273574c1f4ebd94",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "skills": [
+        {
+          "name": "openchatcut-talking-video",
+          "path": "."
+        }
+      ]
+    },
+    "open-slide": {
+      "repo": "1weiho/open-slide",
+      "commit": "130ce416886357de66ffc248e4eda69fa9cc7332",
+      "archive_url": "https://codeload.github.com/1weiho/open-slide/tar.gz/130ce416886357de66ffc248e4eda69fa9cc7332",
+      "archive_sha256": "f80f74ea6534a64833a1a1d83b2ad8e5fc81b540a7db9d56a105d1139637c4bf",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "skills": []
+    },
+    "agent-reach": {
+      "repo": "Panniantong/Agent-Reach",
+      "commit": "a19a171fa980a0785849596492e0af4db800c82f",
+      "archive_url": "https://codeload.github.com/Panniantong/Agent-Reach/tar.gz/a19a171fa980a0785849596492e0af4db800c82f",
+      "archive_sha256": "c1b5cb9b8816a449e42c7499a8a1573b60b391b0fa2b4935e759ec974a99a744",
+      "license": "MIT",
+      "verified_on": "2026-09-22",
+      "skills": [
+        {
+          "name": "agent-reach",
+          "path": "agent_reach/skill"
+        }
+      ],
+      "note": "講師於 2026-09-22 新增至行銷階段；保留上游原文與 references，使用課程整合版 SKILL.md。CLI 另依 docs/agent-reach.md 安裝與實測。"
+    }
+  }
+}

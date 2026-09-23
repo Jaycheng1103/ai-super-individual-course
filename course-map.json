@@ -1,0 +1,512 @@
+{
+  "schema": 2,
+  "version": "2.0.0",
+  "sequence_note": "課堂版承接已建立的 Codex 專案與已手動連接的外掛；前三階段合併為一次開場處理，立即安全安裝 AIS-OS 後訪談。雲端功能在首次實際使用時驗證。後續依原課堂順序；first-video 為統一驗收點。",
+  "stages": [
+    {
+      "id": "environment",
+      "order": 1,
+      "title": "確認課前專案與環境",
+      "tier": "core",
+      "depends_on": [],
+      "guide": "stages/environment.md",
+      "classroom_source": "C4376，00:00、33:32、42:37 起",
+      "student_inputs": [
+        "沿用目前 Codex 專案與已知環境，只有無法判定時才詢問"
+      ],
+      "actions": [
+        "唯讀確認目前專案與必要工具",
+        "接續 AIS-OS 安裝後回填環境證據"
+      ],
+      "outputs": [
+        ".course/learning-brief.md"
+      ],
+      "acceptance": [
+        "AI 能讀教材與目前專案",
+        "目前專案位置明確且可承接 AIS-OS"
+      ]
+    },
+    {
+      "id": "connectors",
+      "order": 2,
+      "title": "沿用課前外掛設定",
+      "tier": "core",
+      "depends_on": [
+        "environment"
+      ],
+      "guide": "stages/connectors.md",
+      "classroom_source": "C4377，00:00 起",
+      "student_inputs": [
+        "講師課前已帶學員手動連接外掛；未知項目如實記錄"
+      ],
+      "actions": [
+        "沿用現有設定，不重做連接",
+        "功能實測留到首次使用指定資料時進行"
+      ],
+      "outputs": [
+        ".course/connections.md"
+      ],
+      "acceptance": [
+        "設定狀態及證據來源已記錄",
+        "功能實測狀態獨立標示，未測不宣稱成功"
+      ]
+    },
+    {
+      "id": "workspace",
+      "order": 3,
+      "title": "建立 AI 第二大腦",
+      "tier": "core",
+      "depends_on": [
+        "connectors"
+      ],
+      "guide": "stages/workspace.md",
+      "classroom_source": "C4378，00:00–03:06",
+      "student_inputs": [
+        "目前 Codex 專案的實際路徑，能自行確認就不再問"
+      ],
+      "actions": [
+        "安裝 AIS-OS 並讀回六個技能",
+        "在私人庫完成檔案寫入與讀回"
+      ],
+      "outputs": [
+        "AGENTS.md",
+        "CLAUDE.md",
+        "aios-intake.md"
+      ],
+      "acceptance": [
+        "六個技能與附件存在",
+        "學員能開啟自己的資料與測試摘要"
+      ]
+    },
+    {
+      "id": "background",
+      "order": 4,
+      "title": "背景訪談與補足資料",
+      "tier": "core",
+      "depends_on": [
+        "workspace"
+      ],
+      "guide": "stages/background.md",
+      "classroom_source": "C4378，07:14 起；C4379；C4380，02:10 起",
+      "student_inputs": [
+        "本人背景與近期目標",
+        "1–2 份本人文字樣本"
+      ],
+      "actions": [
+        "依 onboard 七個主題逐題訪問",
+        "本人核對背景，再以 audit、grill-me 補缺口"
+      ],
+      "outputs": [
+        "context/about-me.md",
+        "references/voice.md",
+        ".course/interview.md"
+      ],
+      "acceptance": [
+        "背景、目標與語氣能指回本人確認的資料",
+        "未答題與待確認資訊明確保留"
+      ]
+    },
+    {
+      "id": "knowledge",
+      "order": 5,
+      "title": "整理知識與索引",
+      "tier": "core",
+      "depends_on": [
+        "background"
+      ],
+      "guide": "stages/knowledge.md",
+      "classroom_source": "C4380，03:53–05:19",
+      "student_inputs": [
+        "三份願意練習的自有資料",
+        "兩個工作上會問的問題"
+      ],
+      "actions": [
+        "保留原件、建立摘要與索引",
+        "使用 link 建立資料路由並測試問答"
+      ],
+      "outputs": [
+        "knowledge/wiki/index.md"
+      ],
+      "acceptance": [
+        "問答能引用正確原件",
+        "找不到的答案明確標示不足"
+      ]
+    },
+    {
+      "id": "daily-work",
+      "order": 6,
+      "title": "讓 AI 完成一項日常工作",
+      "tier": "core",
+      "depends_on": [
+        "knowledge"
+      ],
+      "guide": "stages/daily-work.md",
+      "classroom_source": "C4382，02:24–11:33",
+      "student_inputs": [
+        "一份可用的會議記錄或工作文件",
+        "希望交付的格式與位置"
+      ],
+      "actions": [
+        "確認起點、目的地與限制",
+        "整理指定資料，實際打開成果"
+      ],
+      "outputs": [
+        "outputs/daily-work/summary.md"
+      ],
+      "acceptance": [
+        "內容符合指定來源與日期",
+        "交付檔案可讀；雲端結果另行驗證"
+      ]
+    },
+    {
+      "id": "skills",
+      "order": 7,
+      "title": "安裝行銷與創作能力",
+      "tier": "core",
+      "depends_on": [
+        "daily-work"
+      ],
+      "guide": "stages/skills.md",
+      "classroom_source": "C4382，13:50–16:53；Agent Reach 為講師 2026-09-22 新增",
+      "student_inputs": [
+        "目前使用的 agent",
+        "下一步要做的內容類型"
+      ],
+      "actions": [
+        "依序安裝 Marketing Skills、Agent Reach 與內容三件組",
+        "讀回技能及附件，依 Agent Reach 指引安裝隔離 CLI、診斷並實測公開 RSS",
+        "用真實工作目標產出內容規劃，保存版本、測試結果與斷點"
+      ],
+      "outputs": [
+        ".course/installed.json",
+        ".course/agent-reach-check.md"
+      ],
+      "acceptance": [
+        "agent 能讀取指定 SKILL.md 及 references",
+        "用真實工作目標產出一份內容規劃",
+        "Agent Reach CLI 可執行；公開 RSS 實測取得非空標題與網址，未設定平台不列為已可用"
+      ]
+    },
+    {
+      "id": "content",
+      "order": 8,
+      "title": "近況訪談與內容三件組",
+      "tier": "core",
+      "depends_on": [
+        "skills"
+      ],
+      "guide": "stages/content.md",
+      "classroom_source": "C4383，05:00 起；C4384 前段",
+      "student_inputs": [
+        "最近一個月的一件真實事件",
+        "受眾、觀點與可使用照片"
+      ],
+      "actions": [
+        "一次一題取得事件素材",
+        "依序完成 FB 長文、短影音腳本與輪播規劃"
+      ],
+      "outputs": [
+        "sources/recent-experience.md",
+        "outputs/content/facebook.md",
+        "outputs/content/reels.md",
+        "outputs/content/carousel.md"
+      ],
+      "acceptance": [
+        "三份草稿均可追溯同一份真實素材",
+        "本人至少完整修改一份；待補圖像有標示"
+      ]
+    },
+    {
+      "id": "human",
+      "order": 9,
+      "title": "修正文案語氣",
+      "tier": "core",
+      "depends_on": [
+        "content"
+      ],
+      "guide": "stages/human.md",
+      "classroom_source": "C4384，04:42–06:47；C4385，22:23 起",
+      "student_inputs": [
+        "上一階段草稿",
+        "本人語感樣本及不想使用的表達"
+      ],
+      "actions": [
+        "安裝 speak-human-tw",
+        "比較原稿與修訂稿，讓本人核對"
+      ],
+      "outputs": [
+        "outputs/content/revision-notes.md"
+      ],
+      "acceptance": [
+        "保留原稿與修改理由",
+        "沒有添加不存在的故事、數字或承諾"
+      ]
+    },
+    {
+      "id": "research",
+      "order": 10,
+      "title": "Tavily 串接與定位研究",
+      "tier": "core",
+      "depends_on": [
+        "human"
+      ],
+      "guide": "stages/research.md",
+      "classroom_source": "C4385，00:00–22:23",
+      "student_inputs": [
+        "服務對象與研究問題",
+        "自己的 Tavily 帳號及使用選擇"
+      ],
+      "actions": [
+        "設定與測試 Tavily",
+        "研究 1–3 個競品，整理定位及產品假設"
+      ],
+      "outputs": [
+        "outputs/research/positioning.md"
+      ],
+      "acceptance": [
+        "每項主要事實有原始網址與日期",
+        "定位與價格提案標為待驗證假設"
+      ]
+    },
+    {
+      "id": "recording",
+      "order": 11,
+      "title": "訪談練習與拍攝素材",
+      "tier": "core",
+      "depends_on": [
+        "research"
+      ],
+      "guide": "stages/recording.md",
+      "classroom_source": "C4386；C4387，00:04–02:38",
+      "student_inputs": [
+        "一份口播題目與腳本",
+        "手機與可用的安靜拍攝位置"
+      ],
+      "actions": [
+        "訪談暖身、親自拍攝",
+        "傳到私人工作區，驗證影音完整"
+      ],
+      "outputs": [
+        "media/source/",
+        "outputs/video/source-notes.md"
+      ],
+      "acceptance": [
+        "自己的原片可播放且聲音可辨識",
+        "記錄原片路徑，沒有覆寫原片"
+      ]
+    },
+    {
+      "id": "editor",
+      "order": 12,
+      "title": "安裝剪輯工作臺與母版",
+      "tier": "core",
+      "depends_on": [
+        "recording"
+      ],
+      "guide": "stages/editor.md",
+      "classroom_source": "C4387，02:38 起",
+      "student_inputs": [
+        "OS 與 CPU 架構",
+        "上一階段原片"
+      ],
+      "actions": [
+        "安裝 OpenChatCut 與兩個技能",
+        "連接 MCP、匯入母版並複製工程"
+      ],
+      "outputs": [
+        "outputs/video/project-notes.md"
+      ],
+      "acceptance": [
+        "MCP 狀態與工程列表可讀",
+        "母版與自己的素材能在工作臺開啟"
+      ]
+    },
+    {
+      "id": "first-edit",
+      "order": 13,
+      "title": "逐字稿選段與第一輪剪輯",
+      "tier": "core",
+      "depends_on": [
+        "editor"
+      ],
+      "guide": "stages/first-edit.md",
+      "classroom_source": "C4387；C4388，00:00–05:19",
+      "student_inputs": [
+        "原片與預期觀眾",
+        "想保留的意思與長度"
+      ],
+      "actions": [
+        "產出忠實逐字稿或先用人工校對文字",
+        "選段、試剪並預覽字幕與標題"
+      ],
+      "outputs": [
+        "outputs/video/edit-plan.md",
+        "outputs/video/transcript.md"
+      ],
+      "acceptance": [
+        "每個選段可回到原片時間碼",
+        "本人確認意思與字幕；尚未完成的剪輯明確標示"
+      ]
+    },
+    {
+      "id": "flywheel",
+      "order": 14,
+      "title": "設計自己的變現飛輪",
+      "tier": "core",
+      "depends_on": [
+        "first-edit"
+      ],
+      "guide": "stages/flywheel.md",
+      "classroom_source": "C4388，05:19–19:30",
+      "student_inputs": [
+        "定位研究與可交付能力",
+        "每週可投入時間及目標"
+      ],
+      "actions": [
+        "整理流量、信任、成交、交付回饋的路徑",
+        "拆解一項服務與營收目標，選定驗證行動"
+      ],
+      "outputs": [
+        "outputs/business/flywheel.md",
+        "outputs/business/offer.md"
+      ],
+      "acceptance": [
+        "每個環節有具體行動與觀察指標",
+        "目標與假設分開，成本及交付工時有列入"
+      ]
+    },
+    {
+      "id": "transcription",
+      "order": 15,
+      "title": "ElevenLabs 設定與轉錄",
+      "tier": "core",
+      "depends_on": [
+        "flywheel"
+      ],
+      "guide": "stages/transcription.md",
+      "classroom_source": "C4388，24:20–41:13",
+      "student_inputs": [
+        "自己的 ElevenLabs 帳號",
+        "允許上傳的 10–20 秒聲音樣本"
+      ],
+      "actions": [
+        "建立最小需要權限並測試轉錄",
+        "回聽校對；需要時另設定剪輯工作臺"
+      ],
+      "outputs": [
+        ".course/checks/elevenlabs-transcript.json"
+      ],
+      "acceptance": [
+        "短音訊真實回傳逐字稿並經本人核對",
+        "helper 與剪輯工作臺設定狀態分別記錄"
+      ]
+    },
+    {
+      "id": "first-video",
+      "order": 16,
+      "title": "完成並驗收第一支影片",
+      "tier": "core",
+      "depends_on": [
+        "transcription"
+      ],
+      "guide": "stages/first-video.md",
+      "classroom_source": "C4387–C4388 剪輯實作；本步為統一驗收點",
+      "student_inputs": [
+        "已確認選段、字幕與本人素材"
+      ],
+      "actions": [
+        "接回第一輪剪輯完成作品",
+        "輸出影片、字幕與可攜工程，重開驗證"
+      ],
+      "outputs": [
+        "outputs/video/final.mp4",
+        "outputs/video/final.srt",
+        "outputs/video/portable-project/"
+      ],
+      "acceptance": [
+        "全片播放與字幕校對通過",
+        "工程重開後媒體在線且可編輯"
+      ]
+    },
+    {
+      "id": "service",
+      "order": 17,
+      "title": "建立服務介紹與承接入口",
+      "tier": "core",
+      "depends_on": [
+        "first-video"
+      ],
+      "guide": "stages/service.md",
+      "classroom_source": "C4388，41:59 起；C4389；C4390 開頭",
+      "student_inputs": [
+        "已確認的服務草案",
+        "自己的品牌素材與預期 CTA"
+      ],
+      "actions": [
+        "撰寫關於頁並配置視覺",
+        "建立可預覽的服務入口，檢查手機與按鈕"
+      ],
+      "outputs": [
+        "outputs/business/about.md",
+        "outputs/business/entry-check.md"
+      ],
+      "acceptance": [
+        "陌生讀者看得懂對象、交付與下一步",
+        "入口預覽可讀；公開與付費状态另記"
+      ]
+    },
+    {
+      "id": "delivery",
+      "order": 18,
+      "title": "行動計畫、回顧與日常循環",
+      "tier": "core",
+      "depends_on": [
+        "service"
+      ],
+      "guide": "stages/delivery.md",
+      "classroom_source": "C4390 複習；C4391–C4392 問答；行動表為課後實作設計",
+      "student_inputs": [
+        "目前完成的作品與服務草案",
+        "下週實際可投入的時段"
+      ],
+      "actions": [
+        "盤點交付與未完成事項",
+        "排定第一週行動及回顧時間"
+      ],
+      "outputs": [
+        "outputs/business/action-plan.md",
+        "outputs/review.md"
+      ],
+      "acceptance": [
+        "每個行動有日期、產物與檢查方式",
+        "選出一次真實驗證與一項後續改善"
+      ]
+    },
+    {
+      "id": "optional",
+      "order": 19,
+      "title": "依需求選擇延伸工具",
+      "tier": "optional",
+      "depends_on": [
+        "delivery"
+      ],
+      "guide": "stages/optional.md",
+      "classroom_source": "C4391–C4392 自由問答與課後連結",
+      "student_inputs": [
+        "下一項想改善的工作",
+        "已有帳號與預算限制"
+      ],
+      "actions": [
+        "一次選一項有用途的延伸",
+        "確認官方條件後做最小功能測試"
+      ],
+      "outputs": [
+        ".course/optional-tools.md"
+      ],
+      "acceptance": [
+        "每項分別記錄已測、未測或不使用",
+        "未實作的串接不列為已完成"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.course/
+student-workspace/
+my-ai-workspace/
+private/
+*.key
+*.pem
+node_modules/
+.pytest_cache/
